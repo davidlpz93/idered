@@ -1,0 +1,53 @@
+{% extends 'layouts/master.html' %}
+{% block title %}Login{% endblock %}
+{% block body %}
+<div class="login-wrapper columns">
+    <div class="column is-8 is-hidden-mobile hero-banner">
+      <section class="hero is-fullheight is-dark">
+        <div class="hero-body" id="background-login">
+          
+        </div>
+      </section>  
+    </div>
+    <div class="column is-4">
+      <section class="hero is-fullheight">
+        <div class="hero-heading">
+          <div class="section has-text-centered">
+            <img src="{{ url_for('static', filename='img/idecrea_azul.png') }}" alt="Bulma logo" width="300px">
+          </div>
+        </div>
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-8 is-offset-2">
+                <div class="login-form">
+                  <p class="control has-icon has-icon-right">
+                    <input class="input email-input" type="text" placeholder="jsmith@example.org">
+                    <span class="icon user">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </p>
+                  <p class="control has-icon has-icon-right">
+                    <input class="input password-input" type="password" placeholder="●●●●●●●">
+                    <span class="icon user">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </p>
+                  <p class="control login">
+                    <button class="button is-success is-outlined is-large is-fullwidth">Login</button>
+                  </p>
+                </div>
+                <div class="section forgot-password">
+                  <p class="has-text-centered">
+                    <a href="#">Forgot password</a>
+                    <a href="#">Need help?</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+    </div>
+  </div>
+{% endblock %}

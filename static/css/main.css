@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'principal';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+  font-family: 'principal';
+}
+
+#background-login {
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav.nav.has-shadow {
+  background-color: #00afda;
+}
+
+nav.nav.has-shadow a {
+  color: white;
+}
+
+nav.nav.has-shadow .nav-item a.is-tab.is-active, nav.nav.has-shadow a.nav-item.is-tab.is-active {
+  color: #f27014;
+  border-bottom-color: #f27014;
+}

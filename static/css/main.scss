@@ -1,0 +1,24 @@
+@import 'colors';
+@import 'fonts';
+
+body{
+    font-family: 'principal';
+}
+
+#background-login {
+    background: {
+        image: url(../img/fondo.jpg);
+        size: cover;
+        position: center;
+    }
+}
+nav.nav.has-shadow {
+    background-color: $color_blue;
+    a {
+        color: $color_white;
+        }
+        .nav-item a.is-tab.is-active, a.nav-item.is-tab.is-active {
+            color: $color_orange;
+            border-bottom-color: $color_orange;
+        }
+    }

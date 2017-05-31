@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>{% block title %}{% endblock %} | Idered</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    
+</head>
+<body>
+    <header>
+    <nav class="nav has-shadow">
+        <div class="container">
+            <div class="nav-left">
+            <a class="nav-item">
+                <img src="{{ url_for('static', filename='img/logo_idered.png') }}" alt="Idered logo" class="image">
+            </a>
+            <a class="nav-item is-tab is-hidden-mobile is-active">Home</a>
+            <a class="nav-item is-tab is-hidden-mobile">Features</a>
+            <a class="nav-item is-tab is-hidden-mobile">Pricing</a>
+            <a class="nav-item is-tab is-hidden-mobile">About</a>
+            </div>
+            <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+            <div class="nav-right nav-menu">
+            <a class="nav-item is-tab is-hidden-tablet is-active">Home</a>
+            <a class="nav-item is-tab is-hidden-tablet">Features</a>
+            <a class="nav-item is-tab is-hidden-tablet">Pricing</a>
+            <a class="nav-item is-tab is-hidden-tablet">About</a>
+            <a class="nav-item is-tab">
+                <figure class="image is-16x16" style="margin-right: 8px;">
+                <img src="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+                </figure>
+                Profile
+            </a>
+            <a class="nav-item is-tab">Log out</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+    {% block body %}{% endblock %}
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

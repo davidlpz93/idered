@@ -1,6 +1,23 @@
 @import 'colors';
 @import 'fonts';
 
+// 1. Import the initial variables
+@import "bulma/sass/utilities/initial-variables";
+
+
+$blue: $color_blue;
+$pink: $color_orange;
+$pink-invert: #fff;
+$family-serif: 'principal';
+$primary: $pink;
+$primary-invert: $pink-invert;
+$danger: $color_orange;
+
+$family-primary: 'principal';
+
+@import "bulma/bulma";
+
+
 body{
     font-family: 'principal';
 }
@@ -22,3 +39,6 @@ nav.nav.has-shadow {
             border-bottom-color: $color_orange;
         }
     }
+aside {
+    padding: 2em;
+}
